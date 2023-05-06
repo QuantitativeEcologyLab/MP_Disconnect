@@ -16,6 +16,10 @@ mean(data[which(data$Source == "Lab"), "MPs"])/mean(data[which(data$Source == "S
 MAX <- max(data[which(data$Source == "Soil"), "MPs"])
 data[which(data[which(data$Source == "Lab"), "MPs"] < MAX),]
 
+#How many studies had concentrations below the median?
+MED <- median(data[which(data$Source == "Soil"), "MPs"])
+data[which(data[which(data$Source == "Lab"), "MPs"] < MED),]
+
 set.seed(1)
 A <- 
   ggplot(data = data, aes(y = MPs, x = Source, fill = Source)) +
@@ -61,7 +65,7 @@ B <-
            stat = "identity", alpha = 0.7, fill = "#d1495b") +
   scale_color_manual(values = c("#00798c", "#d1495b")) +
   scale_fill_manual(values = c("#00798c", "#d1495b")) +
-  scale_y_continuous(limits = c(0,25), expand = c(0,0.1)) +
+  scale_y_continuous(limits = c(0,60), expand = c(0,0.1)) +
   ylab("Number of studies") +
   theme_bw() +
   theme(panel.grid.major = element_blank(),
@@ -76,13 +80,56 @@ B <-
         plot.background = element_rect(fill = "transparent", color = NA),
         plot.margin = unit(c(0.2,0.1,0.2,0.2), "cm"))
 
-FIG <-
+
+
+
+lab <- data[which(data$Source == "Lab"),]
+
+fit <- lmer(log10(MPs) ~ Year + (1|DOI), data = lab)
+summary(fit)
+confint(fit)
+
+hist(residuals(fit))
+
+C <- 
+  ggplot(data = lab, aes(y = MPs, x = Year)) +
+  ggtitle("C)") +
+  geom_hline(aes(yintercept = median(data[which(data$Source == "Soil"), "MPs"])), linetype = "dashed", col = "grey70") +
+  geom_smooth(col = "grey40", size = 0.5, method = "lm", se = F) +
+  #geom_point(col = "#d1495b", size = 0.6) +
+  geom_jitter(col = "#d1495b", size = 0.5, width = 0.05) +
+  scale_y_log10(expand = c(0,1),
+                breaks = trans_breaks("log10", function(x) 10^x),
+                labels = trans_format("log10", math_format(10^.x))) +
+  ylab("Microplastics (items/kg)") +
+  xlab("Year") +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        axis.title.y = element_text(size=8, family = "sans", face = "bold"),
+        axis.title.x = element_blank(),
+        axis.text.y = element_text(size=8, family = "sans"),
+        axis.text.x  = element_text(size=8, family = "sans", face = "bold", colour = "black"),
+        plot.title = element_text(hjust = -0.05, size = 12, family = "sans", face = "bold"),
+        legend.position = "none",
+        panel.background = element_rect(fill = "transparent"),
+        plot.background = element_rect(fill = "transparent", color = NA),
+        plot.margin = unit(c(0.2,0.1,0.2,0.2), "cm"))
+
+
+TOP <-
     grid.arrange(A,B,
                  ncol=2,
                  nrow=1)
-  
+
+FIG <-
+  grid.arrange(TOP,C,
+               ncol=1,
+               nrow=2,
+               heights = c(1, 0.5))
+
 ggsave(FIG,
-       width = 6.86, height = 4, units = "in",
+       width = 6.86, height = 6, units = "in",
        dpi = 600,
        bg = "transparent",
        file="Figures/MP_Disconnect.png")

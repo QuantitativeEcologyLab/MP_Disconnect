@@ -1,59 +1,63 @@
-Polymer,Count,Study,,,,
-Polyamdie (PA),0,Lab,,,,
-Polypropylene (PP),0,Lab,,,,
-Polystryene (PS),23,Lab,,,,
-Polyethylene (PE),4,Lab,,,,
-Polyvinyl chloride (PVC),0,Lab,,,,
-Polyethelyne terephthalate (PET),0,Lab,,,,
-Acrylic ,0,Lab,,,,
-Polybutylene terephthalate (PBT),0,Lab,,,,
-Polyvinyl acetate (PVCA),0,Lab,,,,
-Ethylene-vinyl acetate (EVA),0,Lab,,,,
-Polyvinyl alcohol (PVA),0,Lab,,,,
-Methyl 2-hydroxyethyl cellulose,0,Lab,,,,
-Polyphenylene sulfide,0,Lab,,,,
-Rayon,0,Lab,,,,
-Melamine-formaldehyde resin,0,Lab,,,,
-Polypropylene + Polyethylene copolymer,0,Lab,,,,
-Synthetic Rubber,0,Lab,,,,
-Cellophane,0,Lab,,,,
-Polyether sulfone ,0,Lab,,,,
-Polymethyl methacrylate (PMMA),0,Lab,,,,
-Polylactic acid ,0,Lab,,,,
-Ethylene-propylene copolymer (EBC),0,Lab,,,,
-Polyester fiberes (PES),0,Lab,,,,
-Polyurethane (PU),0,Lab,,,,
-Acrylonitrile-butadiene-styrene copolymer (ABS),0,Lab,,,,
-Polyacrylonitriles (PAN),0,Lab,,,,
-Polytetrafluoroethylene,1,Lab,,,,
-Uknown,0,Lab,,,,
-Other,0,Lab,,,,
-Polyamdie (PA),5,Soil,,,,
-Polypropylene (PP),17,Soil,,,,
-Polystryene (PS),10,Soil,,,,
-Polyethylene (PE),18,Soil,,,,
-Polyvinyl chloride (PVC),6,Soil,,,,
-Polyethelyne terephthalate (PET),7,Soil,,,,
-Acrylic ,4,Soil,,,,
-Polybutylene terephthalate (PBT),2,Soil,,,,
-Polyvinyl acetate (PVCA),2,Soil,,,,
-Ethylene-vinyl acetate (EVA),2,Soil,,,,
-Polyvinyl alcohol (PVA),1,Soil,,,,
-Methyl 2-hydroxyethyl cellulose,1,Soil,,,,
-Polyphenylene sulfide,1,Soil,,,,
-Rayon,3,Soil,,,,
-Melamine-formaldehyde resin,1,Soil,,,,
-Polypropylene + Polyethylene copolymer,2,Soil,,,,
-Synthetic Rubber,1,Soil,,,,
-Cellophane,2,Soil,,,,
-Polyether sulfone ,1,Soil,,,,
-Polymethyl methacrylate (PMMA),3,Soil,,,,
-Polylactic acid ,1,Soil,,,,
-Ethylene-propylene copolymer (EBC),1,Soil,,,,
-Polyester fiberes (PES),1,Soil,,,,
-Polyurethane (PU),2,Soil,,,,
-Acrylonitrile-butadiene-styrene copolymer (ABS),3,Soil,,,,
-Polyacrylonitriles (PAN),1,Soil,,,,
-Polytetrafluoroethylene,0,Soil,,,,
-Uknown,2,Soil,,,,
-Other,1,Soil,,,,
+Polymer,Count,Study
+Polyamdie (PA),0,Lab
+Polypropylene (PP),3,Lab
+Polystryene (PS),54,Lab
+Polyethylene (PE),11,Lab
+Polyvinyl Chloride (PVC),2,Lab
+Polyethelyne Terephthalate (PETE),1,Lab
+Polytetraflouroethylene (PET),3,Lab
+Low-Density Polyethylene (LDPE),0,Lab
+High-Density Polyethylene (HDPE),0,Lab
+Acrylic ,0,Lab
+Polybutylene terephthalate (PBT),0,Lab
+Polyvinyl acetate (PVCA),0,Lab
+Ethylene-vinyl acetate (EVA),0,Lab
+Polyvinyl alcohol (PVA),0,Lab
+Methyl 2-hydroxyethyl cellulose,0,Lab
+Polyphenylene sulfide,0,Lab
+Rayon,0,Lab
+Melamine-formaldehyde resin,0,Lab
+Polypropylene + Polyethylene copolymer,0,Lab
+Synthetic Rubber,0,Lab
+Cellophane,0,Lab
+Polyether sulfone ,0,Lab
+Polymethyl methacrylate (PMMA),0,Lab
+Polylactic acid ,0,Lab
+Ethylene-propylene copolymer (EBC),0,Lab
+Polyester fiberes (PES),0,Lab
+Polyurethane (PU),0,Lab
+Acrylonitrile-butadiene-styrene copolymer (ABS),0,Lab
+Polyacrylonitriles (PAN),0,Lab
+Uknown,0,Lab
+Others not listed in study,0,Lab
+Polyamdie (PA),10,Soil
+Polypropylene (PP),33,Soil
+Polystryene (PS),22,Soil
+Polyethylene (PE),32,Soil
+Polyvinyl Chloride (PVC),13,Soil
+Polyethelyne Terephthalate (PETE),5,Soil
+Polytetraflouroethylene (PET),5,Soil
+Low-Density Polyethylene (LDPE),2,Soil
+High-Density Polyethylene (HDPE),1,Soil
+Acrylic ,4,Soil
+Polybutylene terephthalate (PBT),2,Soil
+Polyvinyl acetate (PVCA),1,Soil
+Ethylene-vinyl acetate (EVA),3,Soil
+Polyvinyl alcohol (PVA),1,Soil
+Methyl 2-hydroxyethyl cellulose,1,Soil
+Polyphenylene sulfide,1,Soil
+Rayon,4,Soil
+Melamine-formaldehyde resin,1,Soil
+Polypropylene + Polyethylene copolymer,1,Soil
+Synthetic Rubber,2,Soil
+Cellophane,2,Soil
+Polyether sulfone ,1,Soil
+Polymethyl methacrylate (PMMA),4,Soil
+Polylactic acid ,1,Soil
+Ethylene-propylene copolymer (EBC),1,Soil
+Polyester fiberes (PES),2,Soil
+Polyurethane (PU),4,Soil
+Acrylonitrile-butadiene-styrene copolymer (ABS),4,Soil
+Polyacrylonitriles (PAN),2,Soil
+Uknown,2,Soil
+Others not listed in study,3,Soil
